@@ -5,7 +5,7 @@ Z.wrap('github/ionicabizau/url-extra/v0.0.1/client/main.js', function(require, m
 
         // Render views
         for (var view in self.view) {
-            self.view[view].layout.render();
+            self.view[view].render();
         }
 
         /**
