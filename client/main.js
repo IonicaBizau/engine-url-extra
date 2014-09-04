@@ -3,7 +3,7 @@ Z.wrap('github/ionicabizau/url-extra/v0.0.1/client/main.js', function(require, m
     function init(config, ready) {
         var self = this;
 
-        if (!self.view.layout) {
+        if (!self.view || !self.view.layout) {
             throw new Error("A view named 'layout' is required.");
         }
 
