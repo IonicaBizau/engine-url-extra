@@ -122,6 +122,9 @@ Z.wrap('github/ionicabizau/url-extra/v0.0.1/client/main.js', function(require, m
         };
         self.updateSearchParam = function(param, value) {
             Z.route(updateSearchParam(param, value));
+            if (config.reloadOnChange) {
+                Z._reload();
+            }
         };
 
         ready();
