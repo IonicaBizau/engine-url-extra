@@ -3,11 +3,10 @@ Z.wrap('github/ionicabizau/url-extra/v0.0.1/client/main.js', function(require, m
     function init(config, ready) {
         var self = this;
 
-        if (!self.view || !self.view.layout) {
-            throw new Error("A view named 'layout' is required.");
+        // Render views
+        for (var view in self.view) {
+            self.view[view].layout.render();
         }
-
-        self.view.layout.render();
 
         /**
          * queryString
