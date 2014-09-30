@@ -21,14 +21,14 @@ module.exports = function (config, ready) {
         name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
         var results = regex.exec(location.search);
-        if (results == null) {
+        if (results === null) {
             return "";
         } else {
             var encoded = results[1].replace(/\+/g, " ");
             if (notDecoded) {
                 return encoded;
             }
-            return decodeURIComponent(encoded)
+            return decodeURIComponent(encoded);
         }
     }
 
@@ -43,7 +43,7 @@ module.exports = function (config, ready) {
      */
     function parseQuery(search) {
         var query = {};
-        search = search || window.location.search
+        search = search || window.location.search;
         if (search[0] === "?") {
             search = search.substring(1);
         }
