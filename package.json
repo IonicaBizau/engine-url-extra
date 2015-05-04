@@ -1,0 +1,27 @@
+{
+  "name": "engine-url",
+  "version": "1.0.0",
+  "description": "URL manipulation module for Engine.",
+  "components": {
+      "scripts": [
+        "client/main.js"
+      ]
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jillix/engine-url.git"
+  },
+  "keywords": [
+    "jxengine",
+    "url"
+  ],
+  "author": "jillix <contact@jillix.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jillix/engine-url/issues"
+  },
+  "homepage": "https://github.com/jillix/engine-url"
+}
